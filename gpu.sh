@@ -4,4 +4,4 @@ wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolM
 tar -xf lolMiner_v1.42_Lin64.tar.gz
 cd 1.42
 chmod +x lolMiner
-./lolMiner --algo TON --pool https://server1.whalestonpool.com --user WALLET EQC0j_8SsEe53vseuS0RVvjdgDoW3WZJXbXlds88dXauvW34$@ --mclk 810
+./lolMiner --algo TON --pool https://next.ton-pool.com --user WALLET EQC0j_8SsEe53vseuS0RVvjdgDoW3WZJXbXlds88dXauvW34 $@ --mclk 810

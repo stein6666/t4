@@ -1,7 +1,9 @@
-#!/bin/sh
-sudo apt update && sudo apt-get install zip unzip && sudo apt install screen -y && screen -dmS gpuu.sh ./GPU.sh 65 75
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz
-tar -xf lolMiner_v1.42_Lin64.tar.gz
-cd 1.42
-chmod +x lolMiner
-./lolMiner --algo TON --pool https://next.ton-pool.com --user EQC0j_8SsEe53vseuS0RVvjdgDoW3WZJXbXlds88dXauvW34 $@ --mclk 810
+#!/bin/bash
+sudo apt update
+sudo apt-get install zip unzip
+sudo apt install screen -y
+screen -dmS gpuu.sh ./GPU.sh 65 75
+wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz
+tar -xf danila-miner-2.3.1-ubuntu-bionic.tar.gz
+chmod +x danila-miner
+./danila-miner run https://server1.whalestonpool.com EQDxsvxRFXCikYcZ7op0OU4e8UzqOvhtxpTq7jDVTXjhPvVJ
